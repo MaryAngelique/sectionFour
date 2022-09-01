@@ -12,5 +12,12 @@ public class KeywordsAndExpressions {
         if (highScore == 50) {
             System.out.println("This is an expression");
         }
+
+        int score = 100;
+
+        if (score > 99) {
+            System.out.println("You got the high score!");
+            score = 0;
+        }
     }
 }
