@@ -18,6 +18,8 @@ public class Statements {
                 "still more."
                 );
 
-
+        int anotherVariable = 50;
+        myVariable--;
+        System.out.println("This is another one");
     }
 }
