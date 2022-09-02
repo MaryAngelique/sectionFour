@@ -18,10 +18,18 @@ public class CodeBlocks {
 //            System.out.println("Got here");
 //        }
 
-        if (gameOver == true) {
+        if (gameOver) {
             int finalScore = score + (levelCompleted * bonus);
             System.out.println("Your final score was " + finalScore);
         }
+
+
+        // Print our a second score on the screen with the following
+        // score set to 10000
+        // levelCompleted set to 8
+        // bonus set to 200
+        // But make sure te first print out above still displays as well
+
 
 
     }
