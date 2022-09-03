@@ -30,6 +30,11 @@ public class CodeBlocks {
         // bonus set to 200
         // But make sure te first print out above still displays as well
 
+        boolean newGameOver = true;
+        int newScore = 800;
+        int newLevelCompleted = 5;
+        int newBonus = 100;
+
 
 
     }
