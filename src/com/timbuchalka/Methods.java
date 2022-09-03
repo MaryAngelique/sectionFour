@@ -31,9 +31,14 @@ public class Methods {
         // 3 if the score is > 100 and < 500
         // 4 in all other cases
         // call both methods and display the result of the following
-        // a score of 1500, 900, 400, and 50
-        //
+        // a score of 1500, 900, 400, and 55
 
+    }
+
+    public static void displayHighScorePosition(String playerName, int highScorePosition) {
+        System.out.println(playerName + " managed to get into position"
+            + highScorePosition + " on the high score table"
+        );
     }
 
     public static int calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
