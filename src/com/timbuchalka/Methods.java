@@ -10,10 +10,7 @@ public class Methods {
         int levelCompleted = 5;
         int bonus = 100;
 
-        if (gameOver) {
-            int finalScore = score + (levelCompleted * bonus);
-            System.out.println("Your final score was " + finalScore);
-        }
+        calculateScore();
 
         boolean newGameOver = true;
         int newScore = 800;
@@ -25,6 +22,20 @@ public class Methods {
             System.out.println("Your final score was " + finalScore);
         }
 
+    }
+
+    public static void calculateScore() {
+
+        boolean gameOver = true;
+
+        int score = 5000;
+        int levelCompleted = 5;
+        int bonus = 100;
+
+        if (gameOver) {
+            int finalScore = score + (levelCompleted * bonus);
+            System.out.println("Your final score was " + finalScore);
+        }
 
     }
 }
