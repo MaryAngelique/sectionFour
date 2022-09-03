@@ -35,7 +35,10 @@ public class CodeBlocks {
         int newLevelCompleted = 5;
         int newBonus = 100;
 
-
+        if (gameOver) {
+            int finalScore = newScore + (newLevelCompleted * newBonus);
+            System.out.println("Your final score was " + finalScore);
+        }
 
     }
 }
