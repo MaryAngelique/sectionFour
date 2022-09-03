@@ -24,7 +24,7 @@ public class Methods {
 
     }
 
-    public static void calculateScore() {
+    public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
 
         boolean gameOver = true;
 
