@@ -10,12 +10,12 @@ public class Methods {
         int levelCompleted = 5;
         int bonus = 100;
 
-        calculateScore();
+        calculateScore(true, 800, levelCompleted, bonus);
 
-        boolean newGameOver = true;
-        int newScore = 800;
-        int newLevelCompleted = 5;
-        int newBonus = 100;
+        calculateScore(true, 10000, 8, 200);
+        score = 800;
+        levelCompleted = 5;
+        bonus = 100;
 
         if (gameOver) {
             int finalScore = newScore + (newLevelCompleted * newBonus);
@@ -26,14 +26,9 @@ public class Methods {
 
     public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
 
-        boolean gameOver = true;
-
-        int score = 5000;
-        int levelCompleted = 5;
-        int bonus = 100;
-
         if (gameOver) {
             int finalScore = score + (levelCompleted * bonus);
+            finalScore += 1000;
             System.out.println("Your final score was " + finalScore);
         }
 
