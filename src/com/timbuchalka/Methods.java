@@ -43,18 +43,35 @@ public class Methods {
 
     public static int calculateHighScorePosition(int playerScore) {
 
+//        if(playerScore >= 1000) {
+//            return 1;
+//
+//        } else if(playerScore >= 500 && playerScore < 1000) {
+//            return 2;
+//
+//        } else if(playerScore >= 100 && playerScore < 500) {
+//            return 3;
+//
+//        } else {
+//            return 4;
+//        }
+
+        int position = 4;
+//        assuming position 4 will be returned
+
         if(playerScore >= 1000) {
-            return 1;
+            position = 1;
 
         } else if(playerScore >= 500 && playerScore < 1000) {
-            return 2;
+            position = 2;
 
         } else if(playerScore >= 100 && playerScore < 500) {
-            return 3;
+            position = 3;
 
-        } else {
-            return 4;
         }
+
+
+
     }
 
     public static int calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
