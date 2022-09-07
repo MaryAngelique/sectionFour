@@ -57,7 +57,6 @@ public class Methods {
         }
     }
 
-
     public static int calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
 
         if (gameOver) {
