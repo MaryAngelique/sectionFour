@@ -19,6 +19,13 @@ public class SecondsAndMinutesChallenge {
     // For the input 61 minutes output should be 01h 01m 00s, but it is ok if it is 1h 1m 0s (Tip: use if-else)
     // Create a new console project and call it SecondsAndMinutesChallenge
 
+    public static void main(String[] args) {
+
+        System.out.println(getDurationString(65, 45));
+
+
+    }
+
     private static String getDurationString(long minutes, long seconds) {
         if((minutes < 0) || (seconds <0) || (seconds > 59)) {
             return "Invalid value";
@@ -29,6 +36,15 @@ public class SecondsAndMinutesChallenge {
         return hours + "h " +remainingMinutes + "m " + seconds + "s";
     }
 
+    private static String getDurationString(long seconds) {
+        if(seconds < 0) {
+            return "Invalid value";
+        }
 
+        long minutes = seconds / 60;
+        long remainingSeconds = seconds % 60;
+
+        return getDurationString(minutes, remainingSeconds);
+    }
 
 }
