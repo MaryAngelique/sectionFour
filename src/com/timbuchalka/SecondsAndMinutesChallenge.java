@@ -33,6 +33,12 @@ public class SecondsAndMinutesChallenge {
 
         long hours = minutes / 60;
         long remainingMinutes = minutes % 60;
+
+        String hoursString = hours + "h";
+        if(hours < 10) {
+            hoursString = "0" + hoursString;
+        }
+
         return hours + "h " +remainingMinutes + "m " + seconds + "s";
     }
 
