@@ -39,6 +39,16 @@ public class SecondsAndMinutesChallenge {
             hoursString = "0" + hoursString;
         }
 
+        String minutesString = hours + "m";
+        if(remainingMinutes < 10) {
+            minutesString = "0" + minutesString;
+        }
+
+        String secondsString = hours + "s";
+        if(remainingMinutes < 10) {
+            secondsString = "0" + secondsString;
+        }
+
         return hours + "h " +remainingMinutes + "m " + seconds + "s";
     }
 
